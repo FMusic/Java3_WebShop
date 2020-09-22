@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.17">
+    <root id="1">
+      <ServerVersion>15.0.2000</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="AdventureWorksOBP">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="3" parent="1" name="Java3">
+      <ObjectId>7</ObjectId>
+      <Current>1</Current>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+      <Fingerprint>7.43996/3B958042-CEC5-483B-853B-D33EC611B8AA@DESKTOP-OSC7H6E\SQLEXPRESS</Fingerprint>
+    </database>
+    <database id="4" parent="1" name="PersonalConnector">
+      <ObjectId>8</ObjectId>
+    </database>
+    <database id="5" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <database id="8" parent="1" name="pppk1db">
+      <ObjectId>6</ObjectId>
+    </database>
+    <database id="9" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </database>
+    <schema id="10" parent="3" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="11" parent="3" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="12" parent="3" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="13" parent="3" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="14" parent="3" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="15" parent="3" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="16" parent="3" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="17" parent="3" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="18" parent="3" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="19" parent="3" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="20" parent="3" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2020-06-16.14:09:27.643</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="21" parent="3" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="22" parent="3" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <table id="23" parent="20" name="Bills">
+      <ObjectId>741577680</ObjectId>
+      <CreatedTimestamp>2020-06-15.18:00:58.323</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.333</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="20" name="Categories">
+      <ObjectId>629577281</ObjectId>
+      <CreatedTimestamp>2020-06-15.18:00:58.320</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.333</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="20" name="Clients">
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2020-06-15.18:00:58.303</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.330</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="20" name="CreditCards">
+      <ObjectId>709577566</ObjectId>
+      <CreatedTimestamp>2020-06-15.18:00:58.320</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.330</ModifiedTimestamp>
+    </table>
+    <table id="27" parent="20" name="Items">
+      <ObjectId>805577908</ObjectId>
+      <CreatedTimestamp>2020-06-15.18:00:58.330</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.330</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="20" name="Products">
+      <ObjectId>677577452</ObjectId>
+      <CreatedTimestamp>2020-06-15.18:00:58.320</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.333</ModifiedTimestamp>
+    </table>
+    <routine id="29" parent="20" name="registerClient">
+      <ObjectId>613577224</ObjectId>
+      <SourceTextLength>182</SourceTextLength>
+      <CreatedTimestamp>2020-06-15.18:00:58.313</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.313</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="30" parent="23" name="idbill">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="23" name="clientid">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="32" parent="23" name="creditcardid">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="33" parent="23" name="PK__Bills__57AF620530567661">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idbill</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="23" name="PK__Bills__57AF620530567661">
+      <ObjectId>757577737</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.327</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.327</ModifiedTimestamp>
+      <ColNames>idbill</ColNames>
+      <UnderlyingIndexName>PK__Bills__57AF620530567661</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="35" parent="23" name="FK__Bills__clientid__2E1BDC42">
+      <ObjectId>773577794</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.327</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.327</ModifiedTimestamp>
+      <ColNames>clientid</ColNames>
+      <RefTableId>581577110</RefTableId>
+      <RefTableName>Clients</RefTableName>
+      <RefKeyName>PK__Clients__131FFA55E4D0FCC7</RefKeyName>
+      <RefColNames>idclient</RefColNames>
+    </foreign-key>
+    <foreign-key id="36" parent="23" name="FK__Bills__creditcar__2F10007B">
+      <ObjectId>789577851</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.330</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.330</ModifiedTimestamp>
+      <ColNames>creditcardid</ColNames>
+      <RefTableId>709577566</RefTableId>
+      <RefTableName>CreditCards</RefTableName>
+      <RefKeyName>PK__CreditCa__9B4F0B3AF1956FE8</RefKeyName>
+      <RefColNames>idcreditcard</RefColNames>
+    </foreign-key>
+    <column id="37" parent="24" name="idcategory">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="24" name="cname">
+      <Position>2</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+    </column>
+    <column id="39" parent="24" name="categoryid">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="40" parent="24" name="PK__Categori__78C6B7620E6CD8F5">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idcategory</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="24" name="PK__Categori__78C6B7620E6CD8F5">
+      <ObjectId>645577338</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.320</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.320</ModifiedTimestamp>
+      <ColNames>idcategory</ColNames>
+      <UnderlyingIndexName>PK__Categori__78C6B7620E6CD8F5</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="42" parent="24" name="FK__Categorie__categ__276EDEB3">
+      <ObjectId>661577395</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.320</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.320</ModifiedTimestamp>
+      <ColNames>categoryid</ColNames>
+      <RefTableId>629577281</RefTableId>
+      <RefTableName>Categories</RefTableName>
+      <RefKeyName>PK__Categori__78C6B7620E6CD8F5</RefKeyName>
+      <RefColNames>idcategory</RefColNames>
+    </foreign-key>
+    <column id="43" parent="25" name="idclient">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="25" name="firstname">
+      <Position>2</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+    </column>
+    <column id="45" parent="25" name="lastname">
+      <Position>3</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+    </column>
+    <column id="46" parent="25" name="hashpass">
+      <Position>4</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </column>
+    <column id="47" parent="25" name="email">
+      <Position>5</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+    </column>
+    <index id="48" parent="25" name="PK__Clients__131FFA55E4D0FCC7">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idclient</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="49" parent="25" name="PK__Clients__131FFA55E4D0FCC7">
+      <ObjectId>597577167</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.307</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.307</ModifiedTimestamp>
+      <ColNames>idclient</ColNames>
+      <UnderlyingIndexName>PK__Clients__131FFA55E4D0FCC7</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="26" name="idcreditcard">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="26" name="type">
+      <Position>2</Position>
+      <DataType>nvarchar(10 char)|0s</DataType>
+    </column>
+    <index id="52" parent="26" name="PK__CreditCa__9B4F0B3AF1956FE8">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idcreditcard</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="53" parent="26" name="PK__CreditCa__9B4F0B3AF1956FE8">
+      <ObjectId>725577623</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.323</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.323</ModifiedTimestamp>
+      <ColNames>idcreditcard</ColNames>
+      <UnderlyingIndexName>PK__CreditCa__9B4F0B3AF1956FE8</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="27" name="iditem">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="27" name="productid">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="56" parent="27" name="categoryid">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="57" parent="27" name="quantity">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="27" name="billid">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="59" parent="27" name="PK__Items__875AD50E973FCD86">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>iditem</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="27" name="PK__Items__875AD50E973FCD86">
+      <ObjectId>821577965</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.333</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.333</ModifiedTimestamp>
+      <ColNames>iditem</ColNames>
+      <UnderlyingIndexName>PK__Items__875AD50E973FCD86</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="61" parent="27" name="FK__Items__productid__31EC6D26">
+      <ObjectId>837578022</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.333</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.333</ModifiedTimestamp>
+      <ColNames>productid</ColNames>
+      <RefTableId>677577452</RefTableId>
+      <RefTableName>Products</RefTableName>
+      <RefKeyName>PK__Products__8D507424FEFD1805</RefKeyName>
+      <RefColNames>idproduct</RefColNames>
+    </foreign-key>
+    <foreign-key id="62" parent="27" name="FK__Items__categoryi__32E0915F">
+      <ObjectId>853578079</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.333</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.333</ModifiedTimestamp>
+      <ColNames>categoryid</ColNames>
+      <RefTableId>629577281</RefTableId>
+      <RefTableName>Categories</RefTableName>
+      <RefKeyName>PK__Categori__78C6B7620E6CD8F5</RefKeyName>
+      <RefColNames>idcategory</RefColNames>
+    </foreign-key>
+    <foreign-key id="63" parent="27" name="FK__Items__billid__33D4B598">
+      <ObjectId>869578136</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.333</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.333</ModifiedTimestamp>
+      <ColNames>billid</ColNames>
+      <RefTableId>741577680</RefTableId>
+      <RefTableName>Bills</RefTableName>
+      <RefKeyName>PK__Bills__57AF620530567661</RefKeyName>
+      <RefColNames>idbill</RefColNames>
+    </foreign-key>
+    <column id="64" parent="28" name="idproduct">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="28" name="pname">
+      <Position>2</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+    </column>
+    <column id="66" parent="28" name="pdesc">
+      <Position>3</Position>
+      <DataType>nvarchar(300 char)|0s</DataType>
+    </column>
+    <column id="67" parent="28" name="pprice">
+      <Position>4</Position>
+      <DataType>money|0s</DataType>
+    </column>
+    <column id="68" parent="28" name="ppicpath">
+      <Position>5</Position>
+      <DataType>nvarchar(100 char)|0s</DataType>
+    </column>
+    <index id="69" parent="28" name="PK__Products__8D507424FEFD1805">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idproduct</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="28" name="PK__Products__8D507424FEFD1805">
+      <ObjectId>693577509</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2020-06-15.18:00:58.320</CreatedTimestamp>
+      <ModifiedTimestamp>2020-06-15.18:00:58.320</ModifiedTimestamp>
+      <ColNames>idproduct</ColNames>
+      <UnderlyingIndexName>PK__Products__8D507424FEFD1805</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <argument id="71" parent="29" name="@name">
+      <Position>1</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+    </argument>
+    <argument id="72" parent="29" name="@surname">
+      <Position>2</Position>
+      <DataType>nvarchar(20 char)|0s</DataType>
+    </argument>
+    <argument id="73" parent="29" name="@hashpass">
+      <Position>3</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+    </argument>
+    <argument id="74" parent="29" name="@email">
+      <Position>4</Position>
+      <DataType>nvarchar(30 char)|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
